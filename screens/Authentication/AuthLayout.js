@@ -1,5 +1,5 @@
 import React from "react";
-import {View, Text, Image} from "react-native";
+import {View, Text, Image, ScrollView} from "react-native";
 
 import {images, FONTS, SIZES, COLORS} from "../../constants";
 
@@ -18,7 +18,7 @@ const AuthLayout = ({title, subtitle, titleContainerStyle, children}) => {
               <Image source={images.logo_02} resizeMode="contain" style={{height:100, width:200}}/>
            </View>
            {/*   Title and Subtitle*/}
-           <View style={{marginTop:SIZES.padding, ...titleContainerStyle}}>
+           <View style={{...titleContainerStyle}}>
                <Text style={{textAlign:"center", ...FONTS.h2}}>
                    {title}
                </Text>

@@ -32,7 +32,7 @@ const FormInput = ({containerStyle, placeholder,inputStyle, prependComponent, ap
                 backgroundColor:COLORS.lightGray2
             }}>
                 {prependComponent}
-                <TextInput style={{flex:1, ...inputStyle}} placeholder={placeholder} placeholderTextColor={COLORS.gray} secureTextEntry={secureTextEntry} keyboardType={keyboardType} autoCompleteType={autoCompleteType} autoCapitalize={autoCapitalize} onChange={(text) => onChange(text)}/>
+                <TextInput style={{flex:1, ...inputStyle}} placeholder={placeholder} placeholderTextColor={COLORS.gray} secureTextEntry={secureTextEntry} keyboardType={keyboardType} autoCompleteType={autoCompleteType} autoCapitalize={autoCapitalize} onChangeText={(text) => onChange(text)}/>
                 {appendComponent}
             </View>
         </View>
